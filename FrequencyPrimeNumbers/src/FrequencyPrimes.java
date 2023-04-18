@@ -13,7 +13,7 @@ public class FrequencyPrimes {
                         229, 233, 239, 241, 251} ;
 
 
-    // method of factorization in prime factor of n
+    // method for the prime factorization of n
     private static List<Integer> factorization(int n) {
         List<Integer> primeFactors = null;
         if (n < 256) {
@@ -43,7 +43,8 @@ public class FrequencyPrimes {
         n = sc.nextInt();
 
         List<Integer> primeFactors = factorization(n);
-
+        
+        // sanity check
         System.out.println(primeFactors);
 
     }
